@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 25
@@ -31,5 +32,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:recyclerview-v7:25.0.1'
+
+    compile 'org.jetbrains.anko:anko-sdk15:0.+'
+    compile 'org.jetbrains.anko:anko-support-v4:0.+'
+    compile 'org.jetbrains.anko:anko-appcompat-v7:0.+'
 
 }
